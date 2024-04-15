@@ -1,4 +1,4 @@
-var randomNumber = Math.floor(Math.random() * 10) + 1;
+var randomNumber = Math.floor(Math.random() * 100) + 1;
 var guessTimes = 0;
 
 function checkNumber() {
@@ -12,7 +12,7 @@ function checkNumber() {
 	} else if (guess = randomNumber) {
 		alert("恭喜，猜对了！正确答案就是" + randomNumber + "。\n你一共猜了" + guessTimes + "次。已开始新游戏！");
 		isResultTrue = true;
-		randomNumber = Math.floor(Math.random() * 10) + 1;
+		randomNumber = Math.floor(Math.random() * 100) + 1;
 		guessTimes = 0;
 	}
 }
