@@ -5,6 +5,52 @@
 		<title>计算器</title>
 	</head>
 	<body>
-		<h1>计算器</h1>
+		<script>
+			function calculate() {
+				const num1 = parseFloat(document.getElementById('num1').value);
+				const num2 = parseFloat(document.getElementById('num2').value);
+				const operatorValue = document.getElementById('operator').value;
+				let result;
+				switch (operatorValue) {
+					case '+':
+						result = num1 + num2;
+						break;
+					case '-':
+						result = num1 - num2;
+						break;
+					case '×':
+						result = num1 * num2;
+						break;
+					case '÷':
+						if (num2 !== 0) {
+							result = num1 / num2;
+						} else {
+							alert("除数不能为零");
+							return;
+						}
+						break;
+				}
+				document.getElementById('result').value = result;
+			}
+		</script>
+		<header>
+			<h1>计算器</h1>
+		</header>
+		<div>
+			<div>
+				<input type="number" id="num1" />
+				<select id="operator">
+					<option id="+">+</option>
+					<option id="-">-</option>
+					<option id="×">×</option>
+					<option id="÷">÷</option>
+				</select>
+				<input type="number" id="num2" />
+				<button type="submit" onclick="calculate()">=</button>
+			</div>
+			<div>
+				<output id="result"></output>
+			</div>
+		</div>
 	</body>
 </html>
