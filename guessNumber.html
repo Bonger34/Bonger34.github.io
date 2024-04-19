@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>猜数游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/guessNumber.css" />
 	</head>
 	<body>
 		<script src="js/guessNumber.js"></script>
 		<header>
-			<h1>猜数游戏</h1>
+			<a href="index.html" class="back">&#8592;</a>
 		</header>
+		<hr />
+		<h1>猜数游戏</h1>
 		<p>系统已生成一个1-100之间的随机数<br />请输入你的猜测：</p>
 		<input type="number" id="guessNumber" />
 		<button onclick="checkNumber()">提交</button>
