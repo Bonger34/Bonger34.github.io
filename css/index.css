@@ -54,9 +54,7 @@
 	position: absolute;
 }
 
-.home {
-	
-}
+.home {}
 
 .navbar {
 	padding-bottom: 10px;
@@ -76,4 +74,42 @@
 
 .main {
 	text-align: center;
+}
+
+.logo {
+	width: 375px;
+	padding: 100px;
+	border-radius: 50%;
+}
+
+.welcome {
+	font-size: 3rem;
+	font-weight: bolder;
+	padding: 100px;
+	animation: rainbow 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes rainbow {
+	0% {
+		color: red;
+		transform: rotate(1deg);
+	}
+
+	25% {
+		color: orange;
+		transform: scale(1.1, 1.1);
+	}
+
+	50% {
+		color: blue;
+		transform: scale(1.1, 1.1);
+	}
+
+	100% {
+		color: green;
+		transform: rotate(-1deg);
+	}
 }
