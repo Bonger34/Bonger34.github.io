@@ -77,19 +77,19 @@
 }
 
 .logo {
-	width: 375px;
+	max-width: 100%;
+	max-height: 280px;
 	padding: 100px;
 	border-radius: 50%;
 }
 
 .welcome {
+	width: 75%;
 	font-size: 3rem;
 	font-weight: bolder;
-	padding: 100px;
-	animation: rainbow 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	padding: 100px 0 100px 0;
+	margin: auto;
+	animation: rainbow 3s linear infinite alternate;
 }
 
 @keyframes rainbow {
