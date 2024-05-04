@@ -2,3 +2,27 @@
 	text-decoration: none;
 	color: black;
 }
+
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.guessNumber {
+	width: max-content;
+}
+
+.minGuesses {
+	height: max-content;
+	width: max-content;
+	display: flex;
+	justify-content: flex-end;
+	border: 5px dashed black;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.otherProjects div {
+	padding: 8px 8px 8px 32px;
+}
