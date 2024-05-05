@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AI Chatbot</title>
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/ai.css">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css" />
+	</head>
+	<body>
+		<script type="importmap">
+			{"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"}}
+		</script>
+		<script type="module" src="js/ai.js"></script>
+		<header>
+			<a href="index.html" class="back">&#8592;</a>
+			<hr />
+		</header>
+		<main>
+			<h1>
+				<i class="fab fa-google"></i>
+			</h1>
+			<div>
+				<input type="text" id="input" placeholder="Ask me anything!">
+				<button type="button" onclick="generate()">生成</button>
+			</div>
+			<div>
+				<div id="output"></div>
+			</div>
+		</main>
+		<footer>
+			如长时间无生成结果，请检查网络
+		</footer>
+	</body>
+</html>
