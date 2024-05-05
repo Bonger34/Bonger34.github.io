@@ -1,0 +1,24 @@
+main {
+	margin: 20px;
+}
+
+footer {
+	margin-top: auto;
+	color: grey;
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+
+.back {
+	text-decoration: none;
+	color: black;
+}
+
+#output {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: grey solid 1px;
+	border-radius: 10px;
+}
