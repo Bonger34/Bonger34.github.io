@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 
 const ai = new GoogleGenAI({ apiKey: "AIzaSyAYFmsGxIgBSF_LH30dfSa8Cdn7T0oszNs" });
 
-async function main() {
+async function generate() {
   const response = await ai.models.generateContent({
     model: "gemini-2.5-flash",
     contents: "Explain how AI works in a few words",
@@ -10,4 +10,4 @@ async function main() {
   console.log(response.text);
 }
 
-window.main = generate;
+window.generate = generate;
