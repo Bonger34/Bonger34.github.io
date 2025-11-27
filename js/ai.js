@@ -10,4 +10,4 @@ async function main() {
   console.log(response.text);
 }
 
-main();
+window.main = main;
