@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyAYFmsGxIgBSF_LH30dfSa8Cdn7T0oszNs" });
+const ai = new GoogleGenAI({ apiKey: "AIzaSyApwmUoDeoNr0NkXr6s_rz3NLHWpOkz8Vs" });
 
 async function generate() {
   const response = await ai.models.generateContent({
