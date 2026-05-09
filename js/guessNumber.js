@@ -29,13 +29,13 @@ function checkNumber() {
 		randomNumber = Math.floor(Math.random() * 100) + 1;
 		guessTimes = 0;
 	}
-	if (Infinity > minGuesses && minGuesses > 7) {
+	if (minGuesses > 7) {
 		document.getElementsByClassName('minGuesses')[0].style.borderColor = "red";
 		document.getElementsByClassName('minGuesses')[0].style.backgroundColor = "rgba(255, 0, 0, 0.1)";
-	} else if (7 >= minGuesses && minGuesses > 4) {
+	} else if (minGuesses > 4) {
 		document.getElementsByClassName('minGuesses')[0].style.borderColor = "yellow";
 		document.getElementsByClassName('minGuesses')[0].style.backgroundColor = "rgba(255, 255, 0, 0.1)";
-	} else if (4 >= minGuesses && minGuesses >= 1) {
+	} else if (minGuesses >= 1) {
 		document.getElementsByClassName('minGuesses')[0].style.borderColor = "green";
 		document.getElementsByClassName('minGuesses')[0].style.backgroundColor = "rgba(0, 255, 0, 0.1)";
 	}
